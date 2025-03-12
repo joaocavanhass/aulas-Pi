@@ -1,3 +1,4 @@
+package ado3;
 import java.util.Scanner;
 
 public class atividade14 {
