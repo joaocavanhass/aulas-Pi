@@ -8,7 +8,7 @@ public class atividade4 {
         
         int semana;
 
-        System.out.print("dgite o numero da semana: ");
+        System.out.print("digite o numero da semana: ");
         semana = leitor.nextInt();
 
         if (semana == 0) {
