@@ -2,10 +2,13 @@ package ado7;
 
 import java.util.*;
 
-public class ex4 {
+class ex5 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
+        System.out.print("Digite o número múltiplo: ");
+        int multiplo = leitor.nextInt();
+        
         System.out.print("Digite o número de início: ");
         int inicio = leitor.nextInt();
         
@@ -14,12 +17,11 @@ public class ex4 {
         
         int soma = 0;
         for (int i = inicio; i <= fim; i++) {
-            if (i % 2 == 0) {
+            if (i % multiplo == 0) {
                 soma += i;
             }
         }
         
-        System.out.println("A soma dos números pares de " + inicio + " a " + fim + " é " + soma);
-        
+        System.out.println("A soma dos números múltiplos de " + multiplo + ", de " + inicio + " a " + fim + " é " + soma);
     }
 }
